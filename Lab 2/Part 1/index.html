@@ -108,9 +108,7 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img src="firefox-logo120.png" alt="">
-     
-
+      <img src="firefox-logo120.png" alt="Corner logo">
     </header>
 
     <main>
@@ -125,23 +123,29 @@
 
       <div class="further-info">
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="./firefox-logo400.png" alt="Firefox logo">
+          <img src="./firefox-logo400.png" alt="Firefox logo" srcset="./firefox-logo200.png 200w, ./firefox-logo400.png 400w, ./firefox-logo800.png 800w" sizes="(max-width: 600px) 200px, (max-width: 1200px) 400px, 800px">
         </a>
+
         <a href="https://www.mozilla.org/en-US/about/history/details/">
-          <img src="./mozilla-dinosaur400.png" alt="Mozilla dinosaur">
+            <img src="./mozilla-dinosaur400.png" alt="Mozilla dinosaur" srcset="./mozilla-dinosaur200.png 200w, ./mozilla-dinosaur400.png 400w, ./mozilla-dinosaur800.png 800w" sizes="(max-width: 600px) 200px, (max-width: 1200px) 400px, 800px">
         </a>
+
         <a href="https://addons.mozilla.org/en-US/firefox/">
-          <img src="./firefox-addons400.jpg" alt="Firefox addons">
+            <img src="./firefox-addons400.jpg" alt="Firefox addons" srcset="./firefox-addons200.jpg 200w, ./firefox-addons400.jpg 400w, ./firefox-addons800.jpg 800w" sizes="(max-width: 600px) 200px, (max-width: 1200px) 400px, 800px">
         </a>
-        <a href="https://developer.mozilla.org/">
+
+        <a href="https://developer.mozilla.org/en-US">
           <img src="mdn.svg" alt="MDN logo">
         </a>
         <div class="clearfix"></div>
       </div>
 
-      <div class="red-panda">
-        <img src="red-panda-landscape.jpg" alt="">
-      </div>
+      <picture>
+        <source media="(max-width: 600px)" srcset="red-panda-portrait-small.jpg">
+      
+        <img src="red-panda-landscape.jpg" alt="a red panda">
+     
+    </picture>
 
     </main>
   </body>
