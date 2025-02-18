@@ -1,0 +1,20 @@
+html {
+    font-family: sans-serif;
+}
+
+div{
+    height: 300px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    text-shadow: black;
+    border-radius: 15px;
+    border: 1px solid rgba(253, 252, 252, 0.536);
+    background-image: linear-gradient();
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
