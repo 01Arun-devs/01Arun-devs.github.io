@@ -7,7 +7,37 @@
     min-width: 1000px;
     max-width: 1400px;
   }
+
+  @font-face {
+    font-family: 'CustomFont1';
+    src: url('Honey\ Salt.otf') format('otf');
+  } 
+
+  @font-face {
+    font-family: 'CustomFont2';
+    src: url('Sunflare.woff') format('woff');
+  } 
   
+  html {
+    font-family: 'CustomFont1', sans-serif;
+    font-size: 16px;
+  }
+
+  h1, h2 {
+    font-family: 'CustomFont2', sans-serif;
+    text-align: center;
+  }
+
+  p, li {
+    font-size: 1rem; /* Use relative font-sizing */
+    letter-spacing: 0.5px; /* Adjust letter spacing for body text */
+}
+
+/* Indent first paragraph after each heading */
+h1 + p, h2 + p {
+    text-indent: 2em;
+}
+
   /* Layout */
   
   section {
@@ -39,4 +69,64 @@
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
   }
+
+  nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: underline;
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: none;
+    background-color: #ddd;
+}
+
+
+a {
+    text-decoration: underline;
+    outline: none; 
+}
+
+a:hover, a:focus {
+    text-decoration: none; 
+}
+
+a:visited {
+    color: purple;
+}
+
+a:focus {
+    color: darkblue;
+}
+
+a:hover {
+    color: red;
+}
+
+
+ul, ol {
+    list-style-type: square; 
+}
+
+
+a[href^="http"]::after {
+    content: " 🔗";
+    font-size: 0.8em;
+}
+
+
+main {
+    margin: 2rem;
+}
   
