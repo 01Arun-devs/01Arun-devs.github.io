@@ -9,33 +9,32 @@
   }
 
   @font-face {
-    font-family: 'CustomFont1';
+    font-family: 'GeneratedFont1';
     src: url('HoneySalt.otf') format('otf');
   } 
 
   @font-face {
-    font-family: 'CustomFont2';
+    font-family: 'GeneratedFont2';
     src: url('Sunflare.woff') format('woff');
   } 
   
   html {
-    font-family: 'CustomFont1', sans-serif;
+    font-family: 'GeneratedFont1', sans-serif;
     font-size: 16px;
   }
 
   h1, h2 {
-    font-family: 'CustomFont2', sans-serif;
+    font-family: 'GeneratedFont2', sans-serif;
     text-align: center;
     letter-spacing: 2px;
   }
 
   p, li {
-    font-size: 1rem; /* Use relative font-sizing */
-    letter-spacing: 0.5px; /* Adjust letter spacing for body text */
+    font-size: 1rem; 
+    letter-spacing: 0.5px; 
     line-height: 1.5;
 }
 
-/* Indent first paragraph after each heading */
 h1 + p, h2 + p {
     text-indent: 2em;
 }
@@ -124,13 +123,11 @@ ul, ol {
 
 a[href^="http"] {
     background-image: url('external-link-52.png');
-    background-size: 12px 12px; /* Adjust size */
+    background-size: 12px 12px; 
     background-repeat: no-repeat;
-    background-position: right center; /* Position image to the right */
-    padding-right: 18px; /* Ensure text doesn't overlap with the icon */
-}
-
-
+    background-position: right center; 
+    padding-right: 18px; 
+  }
 
 main {
     margin: 2rem;
