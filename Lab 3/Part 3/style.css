@@ -25,7 +25,6 @@
 
   h1, h2 {
     font-family: 'GeneratedFont2', sans-serif;
-    text-align: center;
     letter-spacing: 2px;
   }
 
@@ -33,11 +32,11 @@
     font-size: 1rem; 
     letter-spacing: 0.5px; 
     line-height: 1.5;
-}
+  }
 
-h1 + p, h2 + p {
+  h1 + p, h2 + p {
     text-indent: 2em;
-}
+  }
 
   /* Layout */
   
@@ -53,7 +52,34 @@ h1 + p, h2 + p {
   
   nav {
     float: left;
-    width: 20%;
+    width: auto;
+  }
+
+  nav ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a{
+    display: block; 
+    width: 150px;
+    padding: 30px;
+    border: 2px solid #800000; 
+    background-color: white;
+    color: #964c4c;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  nav a:hover, nav a:focus {
+      text-decoration: none;
+      background-color: #ddd;
   }
   
   footer {
@@ -69,67 +95,39 @@ h1 + p, h2 + p {
   header, footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
-  }
-
-  nav ul {
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav a {
-    text-decoration: underline;
-    padding: 10px;
-    display: block;
-}
-
-nav a:hover, nav a:focus {
-    text-decoration: none;
-    background-color: #ddd;
-}
-
-
-a {
-    text-decoration: underline;
-    outline: none; 
-}
-
-a:hover, a:focus {
-    text-decoration: none; 
-}
-
-a:visited {
-    color: purple;
-}
-
-a:focus {
-    color: darkblue;
-}
-
-a:hover {
-    color: red;
-}
-
-
-ul, ol {
-    list-style-type: square; 
-}
-
-
-a[href^="http"] {
-    background-image: url('external-link-52.png');
-    background-size: 12px 12px; 
-    background-repeat: no-repeat;
-    background-position: right center; 
-    padding-right: 18px; 
-  }
-
-main {
-    margin: 2rem;
-}
+  } 
   
+  a {
+      text-decoration: underline;
+      outline: none; 
+  }
+  
+  a:focus {
+    color: darkblue;
+  }
+
+  a:hover {
+    color: red;
+  }
+  
+  a:visited {
+      color: purple;
+  }
+  
+  ul, ol {
+      list-style-type: square; 
+  }
+  
+  
+  a[href^="http"] {
+      background-image: url('external-link-52.png');
+      background-size: 12px 12px; 
+      background-repeat: no-repeat;
+      background-position: right center; 
+      padding-right: 18px; 
+    }
+  
+  main {
+      margin: 2rem;
+  }
+    
